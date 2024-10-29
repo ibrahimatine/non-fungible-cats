@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Napping Cats Showcase</title>
+    <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  </head>
+  <body>
+    <h1>Napping Cats NFT Collection</h1>
+
+    <!-- Connect Wallet Button -->
+    <button id="connectWallet">Connect Wallet</button>
+    <p id="walletAddress"></p>
+
+    <!-- Table to display cats -->
+    <table>
+      <thead>
+        <tr>
+          <th>Cat ID</th>
+          <th>URI</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Cat 0</td>
+          <td id="cat-0-uri"></td>
+          <td>
+            <button class="buyButton" data-token-id="0">Buy Cat 0</button>
+            <button class="listButton" data-token-id="0">List for Sale</button>
+            <input type="number" id="price-0" placeholder="Price in wei" />
+          </td>
+        </tr>
+        <tr>
+          <td>Cat 1</td>
+          <td id="cat-1-uri"></td>
+          <td>
+            <button class="buyButton" data-token-id="1">Buy Cat 1</button>
+            <button class="listButton" data-token-id="1">List for Sale</button>
+            <input type="number" id="price-1" placeholder="Price in wei" />
+          </td>
+        </tr>
+        <tr>
+          <td>Cat 2</td>
+          <td id="cat-2-uri"></td>
+          <td>
+            <button class="buyButton" data-token-id="2">Buy Cat 2</button>
+            <button class="listButton" data-token-id="2">List for Sale</button>
+            <input type="number" id="price-2" placeholder="Price in wei" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
