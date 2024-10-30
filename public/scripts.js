@@ -1,218 +1,218 @@
 const contractAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"; // Remplace par l'adresse de déploiement
 const contractABI = [
     {
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "_name",
-          "type": "string"
-        },
-        {
-          "internalType": "uint256",
-          "name": "_initialPrice",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "nonpayable",
-      "type": "constructor"
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_name",
+                "type": "string"
+            },
+            {
+                "internalType": "uint256",
+                "name": "_initialPrice",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "buyToken",
-      "outputs": [],
-      "stateMutability": "payable",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "buyToken",
+        "outputs": [],
+        "stateMutability": "payable",
+        "type": "function"
     },
     {
-      "inputs": [],
-      "name": "initialPrice",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [],
+        "name": "initialPrice",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "tokenId",
-          "type": "uint256"
-        },
-        {
-          "internalType": "uint256",
-          "name": "price",
-          "type": "uint256"
-        }
-      ],
-      "name": "listToken",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "uint256",
+                "name": "price",
+                "type": "uint256"
+            }
+        ],
+        "name": "listToken",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "listedForSale",
-      "outputs": [
-        {
-          "internalType": "bool",
-          "name": "",
-          "type": "bool"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "listedForSale",
+        "outputs": [
+            {
+                "internalType": "bool",
+                "name": "",
+                "type": "bool"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "string",
-          "name": "_tokenURI",
-          "type": "string"
-        }
-      ],
-      "name": "mint",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "string",
+                "name": "_tokenURI",
+                "type": "string"
+            }
+        ],
+        "name": "mint",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
     },
     {
-      "inputs": [],
-      "name": "name",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [],
+        "name": "name",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "ownerOf",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "ownerOf",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "tokenOwners",
-      "outputs": [
-        {
-          "internalType": "address",
-          "name": "",
-          "type": "address"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenOwners",
+        "outputs": [
+            {
+                "internalType": "address",
+                "name": "",
+                "type": "address"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "name": "tokenPrices",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenPrices",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "tokenId",
-          "type": "uint256"
-        }
-      ],
-      "name": "tokenURI",
-      "outputs": [
-        {
-          "internalType": "string",
-          "name": "",
-          "type": "string"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            }
+        ],
+        "name": "tokenURI",
+        "outputs": [
+            {
+                "internalType": "string",
+                "name": "",
+                "type": "string"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [],
-      "name": "totalSupply",
-      "outputs": [
-        {
-          "internalType": "uint256",
-          "name": "",
-          "type": "uint256"
-        }
-      ],
-      "stateMutability": "view",
-      "type": "function"
+        "inputs": [],
+        "name": "totalSupply",
+        "outputs": [
+            {
+                "internalType": "uint256",
+                "name": "",
+                "type": "uint256"
+            }
+        ],
+        "stateMutability": "view",
+        "type": "function"
     },
     {
-      "inputs": [
-        {
-          "internalType": "uint256",
-          "name": "tokenId",
-          "type": "uint256"
-        },
-        {
-          "internalType": "address",
-          "name": "to",
-          "type": "address"
-        }
-      ],
-      "name": "transfer",
-      "outputs": [],
-      "stateMutability": "nonpayable",
-      "type": "function"
+        "inputs": [
+            {
+                "internalType": "uint256",
+                "name": "tokenId",
+                "type": "uint256"
+            },
+            {
+                "internalType": "address",
+                "name": "to",
+                "type": "address"
+            }
+        ],
+        "name": "transfer",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
     }
-  ];
+];
 
 async function initContract() {
     if (window.ethereum) {
@@ -247,13 +247,20 @@ async function displayCats() {
     }
 }
 
-
-
 async function buyToken(tokenId) {
     try {
         const contract = await initContract();
         const price = await contract.initialPrice(); 
         console.log(`Buying Cat ${tokenId} at price:`, price.toString());
+
+        // Vérification de la propriété avant l'achat
+        const owner = await contract.ownerOf(tokenId);
+        const userAddress = await contract.signer.getAddress();
+        if (owner === userAddress) {
+            alert("You are already the owner of this token.");
+            return;
+        }
+
         await contract.buyToken(tokenId, { value: price });
         alert(`Bought Cat ${tokenId}!`);
         
@@ -265,45 +272,10 @@ async function buyToken(tokenId) {
     }
 }
 
-async function buyToken(tokenId) {
-    try {
-        const contract = await initContract();
-        
-        // Vérifier si le token est listé pour la vente
-        const isListed = await contract.listedForSale(tokenId);
-        if (!isListed) {
-            alert("This token is not listed for sale.");
-            return;
-        }
-        
-        // Obtenir le prix du token
-        const price = await contract.tokenPrices(tokenId);
-        console.log(`Buying Cat ${tokenId} at price:`, price.toString());
-
-        await contract.buyToken(tokenId, { value: price });
-        alert(`Bought Cat ${tokenId}!`);
-    } catch (error) {
-        console.error("Buy token error:", error);
-    }
-}
-
-// 
-//     const contract = await initContract(); // Assure-toi que initContract() retourne bien l’instance du contrat
-//     const signer = provider.getSigner();
-
-//     try {
-//         const tx = await contract.connect(signer).listToken(tokenId, ethers.utils.parseEther(price.toString()));
-//         await tx.wait();
-//         console.log(`Token ${tokenId} listed for ${price} wei`);
-//     } catch (error) {
-//         console.error("Error listing token:", error);
-//     }
-// }
-
 async function listToken(tokenId) {
     const contract = await initContract();
     const priceInput = document.getElementById(`price-${tokenId}`);
-    const price = priceInput.value; // Récupérer le prix depuis le champ de saisie
+    const price = priceInput.value;
 
     if (!price || isNaN(price)) {
         alert("Please enter a valid price.");
@@ -311,6 +283,14 @@ async function listToken(tokenId) {
     }
 
     try {
+        // Vérification de la propriété avant de lister le token
+        const owner = await contract.ownerOf(tokenId);
+        const userAddress = await contract.signer.getAddress();
+        if (owner !== userAddress) {
+            alert("You are not the owner of this token.");
+            return;
+        }
+
         const tx = await contract.listToken(tokenId, ethers.utils.parseUnits(price, "wei"));
         await tx.wait();
         alert(`Token ${tokenId} listed for sale at ${price} wei.`);
@@ -319,37 +299,8 @@ async function listToken(tokenId) {
     }
 }
 
-
-// async function listToken(tokenId) {
-//     const contract = await initContract();
-//     const priceInput = document.getElementById(`price-${tokenId}`);
-//     const price = priceInput.value;
-//     try {
-//         await contract.listToken(tokenId, price);
-//         alert(`Cat ${tokenId} listed for sale at ${price} wei!`);
-//     } catch (error) {
-//         console.error("List token error:", error);
-//     }
-// }
-
-
-
 // Écouteurs d'événements pour les boutons
 document.getElementById("connectWallet").addEventListener("click", connectWallet);
-
-// document.querySelectorAll(".buyButton").forEach(button => {
-//     button.addEventListener("click", (event) => {
-//         const tokenId = event.target.getAttribute("data-token-id");
-//         buyToken(tokenId);
-//     });
-// });
-
-// document.querySelectorAll(".listButton").forEach(button => {
-//     button.addEventListener("click", (event) => {
-//         const tokenId = event.target.getAttribute("data-token-id");
-//         listToken(tokenId);
-//     });
-// });
 
 document.querySelectorAll(".buyButton").forEach(button => {
     button.addEventListener("click", (event) => {
@@ -367,3 +318,27 @@ document.querySelectorAll(".listButton").forEach(button => {
 
 // Afficher les chats au chargement de la page
 displayCats();
+
+async function checkOwnership(tokenId) {
+  try {
+      const contract = await initContract();
+      
+      // Récupérer l'adresse du propriétaire du token
+      const ownerAddress = await contract.ownerOf(tokenId);
+      
+      // Récupérer l'adresse de l'utilisateur connecté
+      const userAddress = await contract.signer.getAddress();
+      
+      // Vérifier si l'utilisateur connecté est le propriétaire du token
+      if (ownerAddress.toLowerCase() === userAddress.toLowerCase()) {
+          console.log("L'utilisateur est le propriétaire de ce token.");
+          return true;
+      } else {
+          console.log("L'utilisateur n'est pas le propriétaire de ce token.");
+          return false;
+      }
+  } catch (error) {
+      console.error("Erreur lors de la vérification de la propriété:", error);
+      return false;
+  }
+}
